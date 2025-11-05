@@ -1,0 +1,19 @@
+.animated-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.animated-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -2px;
+  left: 0;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.animated-link:hover::after {
+  width: 100%;
+}
