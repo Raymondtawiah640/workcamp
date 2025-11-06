@@ -8,3 +8,66 @@
   <button class="carousel-btn prev" (click)="prevSlide()"><<</button>
   <button class="carousel-btn next" (click)="nextSlide()">>></button>
 </div>
+
+<!-- 🔹 Separate section for PDF links -->
+<div class="bg-blue-50 border border-blue-100 rounded-xl p-6 max-w-2xl mx-auto mt-10 shadow-sm">
+  <ul class="list-none space-y-3">
+    <li>
+      <a
+        href="./pdfs/document.pdf"
+        download="document.pdf"
+        class="block text-blue-700 text-lg font-medium hover:bg-blue-100 hover:text-blue-900 transition-all duration-300 rounded-md px-3 py-2"
+      >
+        Work/Language Camp in Weingarten/Pfalz, Germany 2025
+      </a>
+    </li>
+  </ul>
+</div>
+
+<h2 class="text-center mt-8 text-3xl font-bold">Bilateral workcamps (German-Turkish)</h2>
+<hr class="border-2 border-black mx-auto w-1/6 mt-5">
+<p class="text-center mt-4 text-lg">pro international e.V., Cappeler Str. 12 F, 35039 Marburg, Email: info@pro-international.de, Tel.: 06421-3038863</p>
+<!--  Workcamp Benefits Section -->
+<section class="max-w-6xl mx-auto px-6 py-10">
+  <!-- Title -->
+  <h1 class="text-3xl font-bold text-left text-gray-800 mb-10">
+    What are the benefits of participating in a <br> workcamp?
+  </h1>
+
+  <!-- Two-column layout -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <!-- Left Column -->
+    <div class="space-y-6 text-gray-700 leading-relaxed text-left">
+      <!-- Paragraph 1 -->
+      <p class="animate-slide-in-right min-h-32">
+        In any case, it's a new experience beyond a "normal" holiday – regarding the country visited and its society,
+        the culture of the nationalities represented in your camp, but also, and last but not least, your own culture and personality.
+      </p>
+
+      <!-- Paragraph 3 -->
+      <p class="animate-slide-in-left min-h-32">
+        Presumably, you will have a greater interest in news and information from countries where you now know someone.
+      </p>
+    </div>
+
+    <!-- Right Column -->
+    <div class="relative space-y-6 text-gray-700 leading-relaxed text-left">
+      <!-- Paragraph 2 -->
+      <p class="pr-80 animate-slide-in-right min-h-32">
+        It will certainly also improve your language skills and allow you to get to know another country.
+      </p>
+
+      <!-- Paragraph 4 -->
+      <p class="pr-80 animate-slide-in-left min-h-32">
+        Lasting impressions that could somehow be relevant to your future life and decisions.
+      </p>
+
+      <!-- Image aligned to the right of 2 & 4 -->
+      <img
+        src="./group1.jpg"
+        alt="Workcamp group"
+        class="absolute right-0 -top-32 w-80 h-[calc(100%+8rem)] object-cover rounded-lg shadow-md hidden md:block"
+      >
+    </div>
+  </div>
+</section>

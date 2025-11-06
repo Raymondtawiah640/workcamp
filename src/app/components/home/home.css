@@ -34,6 +34,18 @@
   padding: 10px;
   text-align: center;
   border-radius: 5px 5px 0 0;
+  animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .carousel-btn {
@@ -54,4 +66,35 @@
 
 .carousel-btn.next {
   right: 10px;
+}
+
+/* Animation for paragraphs */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 2s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 2s ease-out;
 }
